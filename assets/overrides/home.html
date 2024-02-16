@@ -1,0 +1,171 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %} {{ super() }}
+
+<!-- Additional styles for landing page -->
+<style>
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+
+  .md-tabs>.md-grid,
+  .md-header>.md-grid,
+  .mdx-container>.md-grid {
+    max-width: 70rem;
+  }
+
+  .md-main {
+    background-color: #ffffff;
+  }
+
+  /* Hide main content for now */
+  .md-content {
+    display: none;
+  }
+
+  .mdx-hero__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mdx-hero__image>img {
+    width: 30%;
+    height: 100%;
+    margin: 10px;
+  }
+
+  .mdx-hero__image a {
+    margin: 10px;
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
+<!-- Hero for landing page -->
+<section class="mdx-container" style="display: flex; flex-direction: column; flex-grow: 1">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero" style="
+        align-items: stretch;
+        display: flex;
+        color: var(--md-primary-bg-color);
+        margin: 0 0.8rem;
+      ">
+      <!-- Hero content -->
+      <div class="mdx-hero__content" style="margin-top: 1.5rem; padding-bottom: 3vw">
+        <!-- <h1 style="color: currentcolor; font-weight: 700; margin-bottom: 1rem">
+          OpenProphetDB
+        </h1> -->
+        <p>{{ config.site_description }}</p> For more details, please visit the following open-source projects:
+        <a href="https://github.com/yjcyxky/prophet-studio" target="_blank" title="Prophet Studio"
+          style="vertical-align: sub;">
+          <img src="https://img.shields.io/badge/Build_Your_Own_Knowledgebase-GitHub-white" alt="Status">
+        </a>
+        <a href="https://github.com/yjcyxky/biomedgps" target="_blank" title="BiomedGPS" style="vertical-align: sub;">
+          <img src="https://img.shields.io/badge/Knowledge_Graph_for_BioMedicine-GitHub-white" alt="Status">
+        </a>
+        <!-- <a href="https://github.com/yjcyxky/graph-builder" target="_blank" title="Knowledge Graph Builder">
+            <img src="https://img.shields.io/badge/Knowledge_Graph_Builder-GitHub-blue" alt="Status">
+          </a>
+          <a href="https://github.com/yjcyxky/ontology-matcher" target="_blank" title="OntologyMatcher">
+            <img src="https://img.shields.io/badge/Ontology_Matcher-GitHub-blue" alt="Status">
+          </a> -->
+        <a href="https://github.com/chinese-quartet" style="vertical-align: sub;">
+          <img alt="Status" src="https://img.shields.io/badge/Quality_Control_for_MultiOmics_Data-GitHub-white">
+        </a>
+        <div style="margin-top: 30px;">
+          <a href="{{ page.next_page.url | url }}" style="margin-right: 0.5rem;" title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary">
+            Ongoing Projects
+          </a>
+          <a href="https://www.prophetdb.org/publications/" target="_blank"
+            style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;"
+            title="Publication List" class="md-button">
+            Publications
+          </a>
+          <a href="https://github.com/open-prophetdb" target="_blank"
+            style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;" title="Follow Us"
+            class="md-button">
+            Follow Us on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="showcase-container">
+      <a href="https://drugs.3steps.cn" target="_blank"
+        title="A Network Medicine Platform with knowledge graph and graph neural network for drug repurposing and disease mechanism.">
+        <img class="image" src="/assets/images/network-medicine-webpage.png" />
+        <img class="title" alt="Status" src="https://img.shields.io/badge/Network_Medicine-Online_System-blue">
+        <p class="desc">A Network Medicine Platform with knowledge graph and graph neural network for drug repurposing and disease mechanism.</p>
+      </a>
+      <a href="https://prophet-studio.3steps.cn" target="_blank"
+        title="Prophet Studio is a data labeling and annotation tool for biomedical knowledges. It is based on Label Studio.">
+        <img class="image" src="/assets/images/prophet-studio.png" alt="Curate Findings from Literature" />
+        <img class="title" alt="Status"
+          src="https://img.shields.io/badge/Prophet_Studio:_Curate_Findings_from_Literature-Online_System-blue">
+        <p class="desc">Prophet Studio is a data labeling and annotation tool for biomedical knowledges. It is based on Label Studio.</p>
+      </a>
+      <a href="https://chinese-quartet.org" target="_blank"
+        title="The Quartet Project provides publicly accessible multi-omics reference materials and practical tools to enhance the reproducibility and reliability of multi-omics results. Well-characterized multiomics reference materials and quality control metrics pertinent to precision medicine study purposes can be used to measure and mitigate technical variation, enabling more accurate cross-batch and cross-omics data integration in increasingly large-scale and longitudinal studies such as the International Human Phenome Project.">
+        <img class="image" src="/assets/images/chinese-quartet.png" />
+        <img class="title" alt="Status"
+          src="https://img.shields.io/badge/Quartet_Data_Portal_for_Quality_Control-Online_System-blue">
+        <p class="desc">The Quartet Project provides publicly accessible multi-omics reference materials and practical tools
+          to enhance the reproducibility and reliability of multi-omics results. Well-characterized multiomics reference
+          materials and quality control metrics pertinent to precision medicine study purposes can be used to measure and
+          mitigate technical variation, enabling more accurate cross-batch and cross-omics data integration in increasingly
+          large-scale and longitudinal studies such as the International Human Phenome Project.</p>
+      </a>
+    </div>
+    <div class="showcase-container" style="display: none;">
+      <a href="https://rapex.prophetdb.org" target="_blank"
+        title="RAPEX is an open-source platform comprising various transcriptome datasets and analyzing tools, as well as a knowledge graph providing a multi-omics network linking vast other factors related to the research questions.">
+        <img class="image" src="/assets/images/rapex.png" alt="Understand Toxicants" />
+        <img class="title" alt="Status" src="https://img.shields.io/badge/Rapex:_Understand_Toxicants-Online_System-blue">
+        <p class="desc">RAPEX is an open-source platform comprising various transcriptome datasets and analyzing tools, as
+          well as a knowledge graph providing a multi-omics network linking vast other factors related to the research
+          questions.</p>
+      </a>
+      <a href="https://cbioportal.3steps.cn/" target="_blank"
+        title="The Fudan Data Portal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.">
+        <img class="image" src="/assets/images/cbioportal.png" />
+        <img class="title" alt="Status"
+          src="https://img.shields.io/badge/Data_Portal_for_MultiOmics_Data-Online_System-blue">
+        <p class="desc">The Fudan Data Portal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.</p>
+      </a>
+      <a href="https://biosolver.cn" target="_blank"
+        title="GuideScoper integrates the experimental data (including those negative results) of gRNA from different cells or laboratories, which not only provides clues for finding the optimal gRNA sequence of a specific gene but also for the cross-checking of experimental results. In the follow-up plan, we will link the gRNAs with cell phenotype data to provide detailed information for functional genomics and drug development.">
+        <img class="image" src="/assets/images/guidescoper.png" />
+        <img class="title" alt="Status"
+          src="https://img.shields.io/badge/GuideScoper:_Find_the_Best_sgRNAs-Online_System-blue">
+        <p class="desc">GuideScoper integrates the experimental data (including those negative results) of gRNA from different cells or laboratories, which not only provides clues for finding the optimal gRNA sequence of a specific gene but also for the cross-checking of experimental results. In the follow-up plan, we will link the gRNAs with cell phenotype data to provide detailed information for functional genomics and drug development.</p>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
