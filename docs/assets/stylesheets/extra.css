@@ -78,7 +78,7 @@ iframe[style^="background"] {
 }
 
 .showcase-container a {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -107,10 +107,17 @@ iframe[style^="background"] {
   /* Only show the top 3 lines, if overflow, show the ellipsis */
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: none;
+  /* display: none; */
+  margin: -85px 0px;
 }
 
 .member-card {
