@@ -7,328 +7,269 @@ hide:
 
 Click the invitation link to join [the project management group](https://github.com/orgs/open-prophetdb/projects/1).
 
-## BGI Genomics
+## Core Members
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/yechaohuang.png"/>
-      <div>
-        <div class="name">Yechao Huang</div>
-        <div class="position">Research Scientist</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #108ee9;">DryLab</span> He has earned a Ph.D. at the School of Life Sciences, Fudan University. He focuses on genomic structural variations in the human genome and population genetics.
-    </div>
-  </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Fudan University
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Jun Shang</div>
-        <div class="position">Co-Founder</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">DryLab</span> He has earned a Ph.D. from Fudan University. He focuses on the multi-omics data integration and analysis for cancers.
-    </div>
-  </div>
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/fengzhu.png"/>
-      <div>
-        <div class="name">Feng Zhu</div>
-        <div class="position">Ph.D.</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">WetLab</span> He is currently pursuing a Ph.D. at Fudan University. His research focuses on the development of CRISPR libraries and gene-editing cell libraries, as well as target and drug screening based on these technologies.
-    </div>
-  </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Georgia Institute of Technology
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/penghaoxu.jpg"/>
-      <div>
-        <div class="name">Penghao xu</div>
-        <div class="position">Post-doc Fellow</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #108ee9;">DryLab</span> Georgia Tech. He has earned a Ph.D. in Bioinformatics from Georgia Tech in 2022. Prior to this, he received a Master’s degree in Computational Sciences and Engineering from Georgia Tech in 2019, and a Bachelor’s degree in Biological Sciences from Fudan University in 2017. His research area include Bioinformatics, Genomics, Data analysis, and Machine Learning. <a href="https://github.com/xph9876">Github</a> >>> <a href="https://www.linkedin.com/in/penghao-xu-24111914b/">Linkedin</a>
-    </div>
-  </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Guilin Medical University
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/xiaofeili.png"/>
-      <div>
-        <div class="name">Xiaofei Li</div>
-        <div class="position">Ph.D.</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">WetLab</span> His primary research focus is to investigate the mechanisms of drug resistance in cancer and to explore the active components of traditional Chinese medicine, as well as repurposing existing drugs, utilizing knowledge graph techniques.
-    </div>
-  </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Harvard Medical School & Massachusetts General Hospital
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  <div class="member-card">
-    <div class="left">
       <img src="/assets/images/jingchengyang.jpeg" />
+      <div class="name">Jingcheng Yang (杨竞成)</div>
+      <div class="position">Founder</div>
+      <div>Harvard Medical School & MGH</div>
       <div>
-        <div class="name">Jingcheng Yang</div>
-        <div class="position">Founder</div>
+        <a target="_blank" href="https://www.researchgate.net/profile/Jingcheng-Yang-4">Website</a>
       </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #108ee9;">DryLab</span> Harvard Medical School & MGH, Fudan University. He has earned a Ph.D. in Genetics from Fudan University. Prior to this, he was a cardiothoracic surgeon. Now, he focuses on integrating multi-omics data and knowledge graphs and conducts deep-learning heterogeneous network methods for network medicine to discover disease mechanisms and potential treatments for rare and complex diseases. <a href="https://github.com/yjcyxky">Github</a> >>> <a href="https://www.researchgate.net/profile/Jingcheng-Yang-4">Research Gate</a>
+  </div>
+  <div class="member-card">
+    <img src="/assets/images/zihanran.png"/>
+    <div class="name">Zihan Ran (冉子涵)</div>
+    <div class="position">Co-Founder</div>
+    <div>Harvard Medical School & MGH</div>
+    <div>
+      <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=nY1CGcoAAAAJ">Website</a>
     </div>
   </div>
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/zihanran.png"/>
-      <div>
-        <div class="name">Zihan Ran</div>
-        <div class="position">Co-Founder</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">WetLab</span> Associate Professor. She has earned a Ph.D. from Fudan University. She focuses on the health effects and toxicological mechanisms of pollutant exposure, knowledge graph and multi-omics data integration and analysis.
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Jun Shang (商骏)</div>
+    <div class="position">Co-Founder</div>
+    <div>Fudan University & FUSCC</div>
+    <div>
+      <a target="_blank" href="https://www.researchgate.net/profile/Jun-Shang-2">Website</a>
     </div>
   </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Johns Hopkins University
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Tianyuan Cheng</div>
-        <div class="position">Master</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2024 Summer Intern</span> Johns Hopkins University. During her internship, she primarily focused on reviewing literature, identifying and organizing evidence to support and explain new findings predicted by AI models, and composing comprehensive reviews.
+    <img src="/assets/images/yechaohuang.png"/>
+    <div class="name">Yechao Huang (黄业超)</div>
+    <div class="position">Co-Founder</div>
+    <div>BGI Genomics</div>
+    <div>
+      <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Yechao-Huang-2167271606">Website</a>
     </div>
   </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## MD Anderson Cancer Center
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Wenjie Chen</div>
-        <div class="position">Post-doc Fellow</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">DryLab</span> He is a postdoctoral research fellow at MD Anderson Cancer Center. His research interests include bioinformatics, genomics, and machine learning.
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Zhixing Zhu (朱之星)</div>
+    <div class="position">Project Manager</div>
+    <div>Shanghai Jiao Tong University</div>
+    <div>
+      <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Zhixing-Zhu-2177398755">Website</a>
     </div>
   </div>
-</div>
-
-## Shanghai Jiao Tong University
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Zhixing Zhu</div>
-        <div class="position">Project Manager</div>
-      </div>
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Jiaqi Wen (翁嘉绮)</div>
+    <div class="position">Project Manager</div>
+    <div>Zhejiang University of Technology</div>
+    <div>
+      <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Jiaqi-Weng-2176387072">Website</a>
     </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">DryLab</span> Her primary responsibilities include managing team projects, tracking progress, assisting with funding applications, and contributing to the construction of the Knowledge Graph. She also helps with staff training and participates in the writing of certain papers.
+  </div>
+  <div class="member-card">
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Xiang Li (李翔)</div>
+    <div class="position">IT Manager</div>
+    <div>&nbsp;</div>
+    <div>
+      <a target="_blank" href="">Website</a>
     </div>
   </div>
 </div>
 
 <span style="margin-bottom: 20px;" />
 
-## Shanghai University of Medicine & Health Sciences
+## Mentors
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Yizi Zhang</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2024 Summer Intern</span> Shanghai University of Medicine & Health Sciences. During her internship, she primarily focused on reviewing literature, identifying and organizing evidence to support and explain new findings predicted by AI models, and composing comprehensive reviews.
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Leming Shi</div>
+    <div class="position">Supervisor</div>
+    <div>Fudan University</div>
+    <div>
+      <a target="_blank" href="https://homo.fudan.edu.cn/ba/84/c18541a178820/page.htm">Website</a>
     </div>
   </div>
-
   <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
+      <img src="/assets/images/unknown.jpg" />
+      <div class="name">Wenzhong Xiao</div>
+      <div class="position">Supervisor</div>
+      <div>Harvard Medical School & MGH</div>
       <div>
-        <div class="name">Fanhao Zhou</div>
-        <div class="position">Undergraduate</div>
+        <a target="_blank" href="https://scholar.google.com/citations?user=AEKRrKwAAAAJ&hl=en">Website</a>
       </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2023-2024</span> Shanghai University of Medicine & Health Sciences. His work primarily involves writing Python code to collect and validate various types of data, as well as testing software systems and large language models.
-    </div>
-  </div>
-
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Yuchen Ye</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2023-2024</span> Shanghai University of Medicine & Health Sciences. His work primarily involves using the customized literature annotation system in OpenProphetDB to annotate and review literature on ME/CFS and Long COVID.
-    </div>
-  </div>
-
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Yiming Chen</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2023-2024</span> His work primarily involves writing Python code to collect and validate various types of data, as well as testing software systems and large language models.
-    </div>
-  </div>
-
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Yiming Cai</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2023-2024</span> Shanghai University of Medicine & Health Sciences. His work primarily involves writing Python code to collect and validate various types of data, as well as testing software systems and large language models.
-    </div>
-  </div>
-
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Xiuwen Chen</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2022-2023</span> Shanghai University of Medicine & Health Sciences. Her primary work involves using the customized literature annotation system in OpenProphetDB to annotate and review literature on diseases of interest, as well as writing related knowledge base papers.
-    </div>
-  </div>
-
-  <div class="member-card">
-    <div class="left">
-      <img src="/assets/images/unknown.jpg"/>
-      <div>
-        <div class="name">Zijing Ma</div>
-        <div class="position">Undergraduate</div>
-      </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">2022-2023</span> Shanghai University of Medicine & Health Sciences. Her primary work involves using the customized literature annotation system in OpenProphetDB to annotate and review literature on diseases of interest, as well as writing related knowledge base papers.
-    </div>
   </div>
 </div>
 
 <span style="margin-bottom: 20px;" />
 
-## Utrecht University
+## Collaborators
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
       <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Liang Liu (刘梁)</div>
+      <div class="position">Physician</div>
+      <div>Fudan University & ZS Hospital</div>
       <div>
-        <div class="name">Jianming Wei</div>
-        <div class="position">Ph.D. Candidate</div>
+        <a target="_blank" href="https://sciprofiles.com/profile/2076332">Website</a>
       </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">DryLab</span> He is a Ph.D. candidate in cardiovascular research. His work primarily leverages the Athero-Express Biobank to integrate multi-omics and clinical data for the discovery of biomarkers related to atherosclerotic cardiovascular disease. His research focuses on applying real-world data to unravel disease mechanisms and advance precision medicine. Currently, he is actively exploring drug repurposing opportunities by integrating electronic health records (EHR) with multi-omics data, aiming to systematically evaluate the repositioning potential of existing drugs for cardiovascular diseases and uncover their underlying molecular mechanisms.
-    </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/fengzhu.png"/>
+      <div class="name">Feng Zhu (朱枫)</div>
+      <div class="position">Ph.D. Candidate</div>
+      <div>Fudan University</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/penghaoxu.jpg"/>
+      <div class="name">Penghao Xu (徐鹏昊)</div>
+      <div class="position">Post-doc Fellow</div>
+      <div>Georgia Tech</div>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/penghao-xu-24111914b/">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/xiaofeili.png"/>
+      <div class="name">Xiaofei Li (黎小飞)</div>
+      <div class="position">Ph.D.</div>
+      <div>Guilin Medical University</div>
+      <div>
+        <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Xiaofei-Li-2185789409">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Tianyuan Cheng (成天元)</div>
+      <div class="position">Research Data Analyst</div>
+      <div>Johns Hopkins University</div>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/tianyuan-michael-cheng-64ba3a261/">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Wenjie Chen (陈文杰)</div>
+      <div class="position">Post-doc Fellow</div>
+      <div>MD Anderson Cancer Center</div>
+      <div>
+        <a target="_blank" href="https://scholar.google.com/citations?user=ob_bNd0AAAAJ&hl=en">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Jianming Wei (魏建铭)</div>
+      <div class="position">Ph.D. Candidate</div>
+      <div>Utrecht University</div>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/jianming-wei-2962a22a4">Website</a>
+      </div>
   </div>
 </div>
 
-<span style="margin-bottom: 20px;" />
-
-## Zhejiang University of Technology
+## Interns
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
       <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Yizi Zhang</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
       <div>
-        <div class="name">Jiaqi Wen</div>
-        <div class="position">Ph.D.</div>
+        <a target="_blank" href="">Website</a>
       </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">WetLab</span> His primary research focus is to investigate the mechanisms of drug resistance in fibrotic diseases and to explore the active components of traditional Chinese medicine, as well as repurposing existing drugs, utilizing knowledge graph techniques.
-    </div>
   </div>
-</div>
 
-<span style="margin-bottom: 20px;" />
-
-## Other Members
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
-    <div class="left">
       <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Fanhao Zhou (周凡皓)</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
       <div>
-        <div class="name">Xiang Li</div>
-        <div class="position">Developer</div>
+        <a target="_blank" href="">Website</a>
       </div>
-    </div>
-    <div class="right">
-      <span class="custom-tag" style="background-color: #2db7f5;">DryLab</span> His work primarily focuses on the analysis of first- and second-generation sequencing data in the field of bioinformatics. as well as IT development and operations.
-    </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Yuchen Ye (叶宇晨)</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Yiming Chen</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Yiming Cai</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Xiuwen Chen (陈秀雯)</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Zijing Ma</div>
+      <div class="position">Undergraduate</div>
+      <div>SUMHS</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Jiahang Wang (王佳航)</div>
+      <div class="position">Undergraduate</div>
+      <div>Zhejiang Sci-Tech University</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Peilong Song (宋培龙)</div>
+      <div class="position">Master Student</div>
+      <div>&nbsp;</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Yicheng Ma (马绎程)</div>
+      <div class="position">Master Student</div>
+      <div>Northeastern University</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
   </div>
 </div>

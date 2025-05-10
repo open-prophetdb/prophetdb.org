@@ -122,94 +122,56 @@ iframe[style^="background"] {
 
 .member-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
-  /* width: 33%; */
-  height: 230px;
+  align-items: center;
+  height: 300px;
   margin-right: 20px;
   border: 1px solid #e7e7e7;
   border-radius: 4px;
   padding: 5px;
 }
 
-.member-card .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.member-card .left img {
+.member-card img {
   width: 150px;
   border: 1px solid #e7e7e7;
   border-radius: 50%;
 }
 
-.member-card .right {
-  font-size: 16px;
-  margin-left: 20px;
-  text-align: left;
-  overflow: scroll;
-}
-
-.member-card .left .name {
+.member-card .name {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin: 5px 0;
 }
 
-.member-card .left .position {
+.member-card .position {
   font-size: 16px;
   text-align: center;
 }
 
 /* media */
 @media screen and (max-width: 768px) {
-  .member-card .right {
-    display: none;
-  }
-
-  .member-card .left {
-    width: 100%;
-  }
-
   .showcase-container a {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .member-card .right {
-    display: none;
-  }
-
-  .member-card .left {
-    width: 100%;
-  }
-
   .showcase-container a {
     width: 100%;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .member-card .right {
-    display: none;
-  }
-
-  .member-card .left {
-    width: 100%;
-  }
-
   .showcase-container a {
     width: 30%;
   }
 }
 
 .member-card {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(33% - 10px);
   margin: 5px;
 }
 
