@@ -273,3 +273,16 @@ Click the invitation link to join [the project management group](https://github.
       </div>
   </div>
 </div>
+
+<!-- 分割线 -->
+<hr style="margin: 20px 0;" />
+
+<div class="partner-logo">
+  <img src="/assets/images/harvard.png"/>
+  <img src="/assets/images/hms.png"/>
+  <img src="/assets/images/georgia-tech.png"/>
+  <img src="/assets/images/fudan.jpeg"/>
+  <img src="/assets/images/zhejianggongye.png"/>
+  <img src="/assets/images/mgh.png"/>
+  <img src="/assets/images/zhongshan.jpeg"/>
+</div>

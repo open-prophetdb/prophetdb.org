@@ -183,3 +183,16 @@ iframe[style^="background"] {
   font-size: 16px;
   text-align: center;
 }
+
+.partner-logo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: auto;
+}
