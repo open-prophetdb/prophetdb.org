@@ -3,11 +3,11 @@ hide:
   - navigation
 ---
 
-# Team Members
+# OpenProphetDB Group
 
 Click the invitation link to join [the project management group](https://github.com/orgs/open-prophetdb/projects/1).
 
-## Core Members
+## Team Members
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
@@ -73,38 +73,6 @@ Click the invitation link to join [the project management group](https://github.
       <a target="_blank" href="">Website</a>
     </div>
   </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Mentors
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-  <div class="member-card">
-    <img src="/assets/images/unknown.jpg"/>
-    <div class="name">Leming Shi</div>
-    <div class="position">Supervisor</div>
-    <div>Fudan University</div>
-    <div>
-      <a target="_blank" href="https://homo.fudan.edu.cn/ba/84/c18541a178820/page.htm">Website</a>
-    </div>
-  </div>
-  <div class="member-card">
-      <img src="/assets/images/unknown.jpg" />
-      <div class="name">Wenzhong Xiao</div>
-      <div class="position">Supervisor</div>
-      <div>Harvard Medical School & MGH</div>
-      <div>
-        <a target="_blank" href="https://scholar.google.com/citations?user=AEKRrKwAAAAJ&hl=en">Website</a>
-      </div>
-  </div>
-</div>
-
-<span style="margin-bottom: 20px;" />
-
-## Collaborators
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
       <img src="/assets/images/unknown.jpg"/>
       <div class="name">Liang Liu (刘梁)</div>
@@ -161,6 +129,24 @@ Click the invitation link to join [the project management group](https://github.
   </div>
   <div class="member-card">
       <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Jinrong Ma (马金荣)</div>
+      <div class="position">Scientist</div>
+      <div>&nbsp;</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
+      <div class="name">Dongchang Qin (秦东昌)</div>
+      <div class="position">Scientist</div>
+      <div>&nbsp;</div>
+      <div>
+        <a target="_blank" href="">Website</a>
+      </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg"/>
       <div class="name">Jianming Wei (魏建铭)</div>
       <div class="position">Ph.D. Candidate</div>
       <div>Utrecht University</div>
@@ -169,6 +155,33 @@ Click the invitation link to join [the project management group](https://github.
       </div>
   </div>
 </div>
+
+<span style="margin-bottom: 20px;" />
+
+## Mentors
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+  <div class="member-card">
+    <img src="/assets/images/unknown.jpg"/>
+    <div class="name">Leming Shi</div>
+    <div class="position">Supervisor</div>
+    <div>Fudan University</div>
+    <div>
+      <a target="_blank" href="https://homo.fudan.edu.cn/ba/84/c18541a178820/page.htm">Website</a>
+    </div>
+  </div>
+  <div class="member-card">
+      <img src="/assets/images/unknown.jpg" />
+      <div class="name">Wenzhong Xiao</div>
+      <div class="position">Supervisor</div>
+      <div>Harvard Medical School & MGH</div>
+      <div>
+        <a target="_blank" href="https://scholar.google.com/citations?user=AEKRrKwAAAAJ&hl=en">Website</a>
+      </div>
+  </div>
+</div>
+
+<span style="margin-bottom: 20px;" />
 
 ## Interns
 
