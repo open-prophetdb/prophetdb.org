@@ -175,7 +175,7 @@ iframe[style^="background"] {
 
 /* 默认电脑，每行4个 */
 .member-card {
-  flex: 0 0 calc(25% - 20px);
+  flex: 0 0 calc(33.33% - 20px);
   margin-right: 20px;
 }
 
@@ -192,19 +192,6 @@ iframe[style^="background"] {
   .member-card {
     flex: 0 0 calc(50% - 20px);
     margin-right: 20px;
-  }
-}
-
-/* 移除最后一列右边距 */
-@media (max-width: 1024px) {
-  .member-card:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .member-card:nth-child(2n) {
-    margin-right: 0;
   }
 }
 
