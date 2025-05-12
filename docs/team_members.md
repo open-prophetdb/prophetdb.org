@@ -57,7 +57,7 @@ Click the invitation link to join [the project management group](https://github.
   </div>
   <div class="member-card">
     <img src="/assets/images/unknown.jpg"/>
-    <div class="name">Jiaqi Wen (翁嘉绮)</div>
+    <div class="name">Jiaqi Weng (翁嘉绮)</div>
     <div class="position">Project Manager</div>
     <div>Zhejiang University of Technology</div>
     <div>
