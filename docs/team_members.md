@@ -298,4 +298,10 @@ Click the invitation link to join [the project management group](https://github.
   <img src="/assets/images/zhejianggongye.png"/>
   <img src="/assets/images/mgh.png"/>
   <img src="/assets/images/zhongshan.jpeg"/>
+  <img src="/assets/images/shanghaijiaotong.png"/>
+  <img src="/assets/images/utrecht.png"/>
+  <img src="/assets/images/heidelberg.png"/>
+  <img src="/assets/images/guilin_medical_university.png"/>
+  <img src="/assets/images/abbvie.png"/>
+  <img src="/assets/images/sanofi.png"/>
 </div>
