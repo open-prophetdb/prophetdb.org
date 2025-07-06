@@ -26,6 +26,7 @@ markdown_extensions:
   - pymdownx.superfences
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/timeline.css
 plugins:
   - search
   - git-revision-date
@@ -66,8 +67,9 @@ theme:
 # Table of contents
 nav:
   - Home: index.md
-  - Projects: projects.md
+  # - Projects: projects.md
   - Goals: goals.md
+  - 'Drug & Target': drug_target.md
   - 'Platform & Resources': platform.md
   - Publications: publications.md
   - Team: team_members.md
