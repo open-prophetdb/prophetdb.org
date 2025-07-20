@@ -7,13 +7,13 @@ hide:
 
 Click the invitation link to join [the project management group](https://github.com/orgs/open-prophetdb/projects/1).
 
-## Team Members
+## Team Members (Order by Join Date)
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
       <img src="/assets/images/jingchengyang.jpeg" />
       <div class="name">Jingcheng Yang (杨竞成)</div>
-      <div class="position">Founder</div>
+      <div class="position">Post-doc Fellow</div>
       <div>Harvard Medical School & MGH</div>
       <div>
         <a target="_blank" href="https://www.researchgate.net/profile/Jingcheng-Yang-4">Website</a>
@@ -22,7 +22,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
     <img src="/assets/images/zihanran.png"/>
     <div class="name">Zihan Ran (冉子涵)</div>
-    <div class="position">Co-Founder</div>
+    <div class="position">Post-doc Fellow</div>
     <div>Harvard Medical School & MGH</div>
     <div>
       <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=nY1CGcoAAAAJ">Website</a>
@@ -31,7 +31,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
     <img src="/assets/images/unknown.jpg"/>
     <div class="name">Jun Shang (商骏)</div>
-    <div class="position">Co-Founder</div>
+    <div class="position">Post-doc Fellow</div>
     <div>Fudan University & FUSCC</div>
     <div>
       <a target="_blank" href="https://www.researchgate.net/profile/Jun-Shang-2">Website</a>
@@ -40,7 +40,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
     <img src="/assets/images/yechaohuang.png"/>
     <div class="name">Yechao Huang (黄业超)</div>
-    <div class="position">Co-Founder</div>
+    <div class="position">Senior Scientist</div>
     <div>BGI Genomics</div>
     <div>
       <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Yechao-Huang-2167271606">Website</a>
@@ -49,7 +49,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
     <img src="/assets/images/unknown.jpg"/>
     <div class="name">Zhixing Zhu (朱之星)</div>
-    <div class="position">Project Manager</div>
+    <div class="position">Scientist</div>
     <div>Shanghai Jiao Tong University</div>
     <div>
       <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Zhixing-Zhu-2177398755">Website</a>
@@ -58,7 +58,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
     <img src="/assets/images/unknown.jpg"/>
     <div class="name">Jiaqi Weng (翁嘉绮)</div>
-    <div class="position">Project Manager</div>
+    <div class="position">Ph.D. Student</div>
     <div>Zhejiang University of Technology</div>
     <div>
       <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Jiaqi-Weng-2176387072">Website</a>
@@ -85,7 +85,7 @@ Click the invitation link to join [the project management group](https://github.
   <div class="member-card">
       <img src="/assets/images/fengzhu.png"/>
       <div class="name">Feng Zhu (朱枫)</div>
-      <div class="position">Ph.D. Candidate</div>
+      <div class="position">Ph.D. Student</div>
       <div>Fudan University</div>
       <div>
         <a target="_blank" href="">Website</a>
@@ -131,7 +131,7 @@ Click the invitation link to join [the project management group](https://github.
       <img src="/assets/images/unknown.jpg"/>
       <div class="name">Jinrong Ma (马金荣)</div>
       <div class="position">Scientist</div>
-      <div>&nbsp;</div>
+      <div>Sanofi</div>
       <div>
         <a target="_blank" href="">Website</a>
       </div>
@@ -140,7 +140,7 @@ Click the invitation link to join [the project management group](https://github.
       <img src="/assets/images/unknown.jpg"/>
       <div class="name">Dongchang Qin (秦东昌)</div>
       <div class="position">Scientist</div>
-      <div>&nbsp;</div>
+      <div>AbbVie</div>
       <div>
         <a target="_blank" href="">Website</a>
       </div>
