@@ -1,5 +1,5 @@
 ---
-title: "MultiOmics Data"
+title: "OpenProphetDB"
 hide:
   - navigation
   - toc

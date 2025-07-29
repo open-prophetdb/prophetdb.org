@@ -1,5 +1,5 @@
 ---
-title: "Drug & Target"
+title: "OpenProphetDB"
 hide:
   - navigation
   - toc

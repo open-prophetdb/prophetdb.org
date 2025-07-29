@@ -1,4 +1,5 @@
 ---
+title: "OpenProphetDB"
 hide:
   - navigation
 ---
