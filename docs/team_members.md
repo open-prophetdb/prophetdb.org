@@ -158,7 +158,7 @@ Click the invitation link to join [the project management group](https://github.
 
 <span style="margin-bottom: 20px;" />
 
-## Mentors
+## Advisors
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div class="member-card">
