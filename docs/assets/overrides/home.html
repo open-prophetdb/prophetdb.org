@@ -93,10 +93,10 @@
           <img alt="Status" src="https://img.shields.io/badge/Quality_Control_for_MultiOmics_Data-GitHub-white">
         </a>
         <div style="margin-top: 30px;">
-          <a href="{{ page.next_page.url | url }}" style="margin-right: 0.5rem;" title="{{ page.next_page.title | e }}"
+          <!-- <a href="{{ page.next_page.url | url }}" style="margin-right: 0.5rem;" title="{{ page.next_page.title | e }}"
             class="md-button md-button--primary">
             Ongoing Projects
-          </a>
+          </a> -->
           <a href="https://www.prophetdb.org/publications/" target="_blank"
             style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;"
             title="Publication List" class="md-button">
@@ -119,7 +119,33 @@
         <p class="desc">A Network Medicine Platform with knowledge graph and graph neural network for drug repurposing
           and disease mechanism.</p>
       </a>
-      <a href="https://chromewebstore.google.com/detail/network-medicine-extensio/eamandgbalpjppofkhbefbbhckkkengp?authuser=0&hl=en"
+      <svg viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet"
+        style="position: absolute; top: 30px; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+
+        <!-- 曲线连线 -->
+        <path d="M 200 200 C 400 100, 600 300, 800 200" stroke="#5ca9f8" stroke-width="2" fill="none"
+          stroke-dasharray="10 10">
+          <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite" />
+        </path>
+
+        <!-- 人(用户)节点 -->
+        <image href="https://img.icons8.com/ios-filled/50/5ca9f8/user.png" x="320" y="120" width="24" height="24" />
+        <circle cx="332" cy="132" r="14" fill="none" stroke="#5ca9f8" stroke-width="2" opacity="0.5" />
+
+        <!-- 数据库节点 -->
+        <image href="https://img.icons8.com/ios-filled/50/7ed3f7/database.png" x="500" y="220" width="24" height="24" />
+        <circle cx="512" cy="232" r="14" fill="none" stroke="#7ed3f7" stroke-width="2" opacity="0.5" />
+
+        <!-- 算法(芯片)节点 -->
+        <image href="https://img.icons8.com/ios-filled/50/7ed3f7/artificial-intelligence.png" x="650" y="150" width="24"
+          height="24" />
+        <circle cx="662" cy="162" r="14" fill="none" stroke="#7ed3f7" stroke-width="2" opacity="0.5" />
+
+        <!-- 两端连接点 -->
+        <circle cx="200" cy="200" r="10" fill="#5ca9f8" />
+        <circle cx="800" cy="200" r="10" fill="#5ca9f8" />
+      </svg>
+      <!-- <a href="https://chromewebstore.google.com/detail/network-medicine-extensio/eamandgbalpjppofkhbefbbhckkkengp?authuser=0&hl=en"
         target="_blank"
         title="This extension enables biomedical researchers to curate, annotate, and synchronize literature-derived findings.">
         <img class="image" src="/assets/images/network-medicine-extension.png" alt="Curate Findings from Literature" />
@@ -127,13 +153,16 @@
           src="https://img.shields.io/badge/Network_Medicine_Extension:_Curate_Findings_from_Literature-Chrome_Extension-blue">
         <p class="desc">This Chrome extension enables biomedical researchers to curate, annotate, and synchronize
           literature-derived findings into a Network Medicine Platform (https://drugs.3steps.cn).</p>
-      </a>
+      </a> -->
       <a href="https://indexd.org" target="_blank"
         title="BioMiner Indexd is a hash-based data indexing and tracking service providing globally unique identifiers.">
         <img class="image" src="/assets/images/indexd.png" />
         <img class="title" alt="Status"
           src="https://img.shields.io/badge/IndexD:_Indexing_and_Sharing_MultiOmics_Data-Online_System-blue">
-        <p class="desc">BioMiner Indexd is a hash-based data indexing and tracking service providing globally unique identifiers.</p>
+        <p class="desc">The BioMiner Indexd standardizes and indexes clinical and multi-omics data through SOP-based
+          processing, including collection, quality control, and cleaning. Omics files and metadata are converted into
+          efficient, searchable datasets with versioning and unified indexing, supporting data integration and reuse.
+        </p>
       </a>
     </div>
     <div class="showcase-container" style="display: none;">
