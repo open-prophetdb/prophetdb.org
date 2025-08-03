@@ -72,6 +72,7 @@ nav:
   - 'Drug & Target': drug_target.md
   # - 'Platform & Resources': platform.md
   - 'MultiOmics Data': multiomics_data.md
+  - 'MultiAgents': multiagents.md
   - Publications: publications.md
   - Team: team_members.md
   - 'Join Us': contact.md
