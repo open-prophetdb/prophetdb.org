@@ -7,12 +7,27 @@
 <style>
   /* Application header should be static for the landing page */
   .md-header {
-    position: initial;
+    margin-top: 20px;
+    position: absolute;
+    top: 50px;
+    background: transparent;
+  }
+
+  .md-header__title {
+    font-size: 1.1rem;
   }
 
   /* Remove spacing, as we cannot hide it completely */
   .md-main__inner {
     margin: 0;
+  }
+
+  .md-tabs {
+    background: transparent;
+  }
+
+  .md-tabs__link {
+    font-size: 1rem;
   }
 
   .md-tabs>.md-grid,
@@ -30,20 +45,473 @@
     display: none;
   }
 
-  .mdx-hero__image {
+  /* Modern Hero Section */
+  .modern-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10rem 0 10rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modern-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #ffffff, #f0f8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
   }
 
-  .mdx-hero__image>img {
-    width: 30%;
-    height: 100%;
-    margin: 10px;
+  .hero-btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  .mdx-hero__image a {
-    margin: 10px;
+  .hero-btn-primary {
+    background: transparent;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-btn-primary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+  }
+
+  .hero-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Features Section */
+  .features-section {
+    padding: 4rem 0;
+    background: #f8fafc;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .feature-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a202c;
+  }
+
+  .feature-description {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  /* Projects Section */
+  .projects-section {
+    padding: 4rem 0;
+    background: white;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+  }
+
+  .project-description {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .project-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #e2e8f0;
+    color: #4a5568;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* Stats Section */
+  .stats-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  /* Team Preview */
+  .team-preview {
+    padding: 4rem 0;
+    background: #f8fafc;
+  }
+
+  .team-section {
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-bottom: 3rem;
+  }
+
+  .team-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .team-scroll-container {
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f7fafc;
+  }
+
+  .team-scroll-container::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .team-scroll-container::-webkit-scrollbar-track {
+    background: #f7fafc;
+    border-radius: 3px;
+  }
+
+  .team-scroll-container::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+  }
+
+  .team-scroll-grid {
+    display: flex;
+    gap: 1.5rem;
+    min-width: max-content;
+    padding: 0 2rem;
+  }
+
+  /* Auto-scroll animation for team members */
+  .team-scroll-container {
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+
+  .team-scroll-grid {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll-left 30s linear infinite;
+    padding: 0 2rem;
+  }
+
+  .team-scroll-grid:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Auto-scroll animation for institutions */
+  .institution-scroll-container {
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+
+  .institution-scroll-grid {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll-right 25s linear infinite;
+    padding: 0 2rem;
+  }
+
+  .institution-scroll-grid:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .team-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    min-width: 200px;
+  }
+
+  .team-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 3px solid #e2e8f0;
+  }
+
+  .team-name {
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .team-position {
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .team-institution {
+    color: #718096;
+    font-size: 0.8rem;
+  }
+
+  .institution-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    min-width: 350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .institution-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .institution-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .institution-name {
+    font-weight: 500;
+    color: #1a202c;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   /* Hide table of contents */
@@ -59,154 +527,572 @@
       display: none;
     }
   }
+
+  #clustrmaps-widget-v2 {
+    position: absolute !important;
+    bottom: 20px;
+    right: 10px;
+  }
 </style>
 
-<!-- Hero for landing page -->
-<section class="mdx-container" style="display: flex; flex-direction: column; flex-grow: 1">
-  <div class="md-grid md-typeset">
-    <div class="mdx-hero" style="
-        align-items: stretch;
-        display: flex;
-        color: var(--md-primary-bg-color);
-        margin: 0 0.8rem;
-      ">
-      <!-- Hero content -->
-      <div class="mdx-hero__content" style="margin-top: 1.5rem; padding-bottom: 3vw">
-        <!-- <h1 style="color: currentcolor; font-weight: 700; margin-bottom: 1rem">
-          OpenProphetDB
-        </h1> -->
-        <p>{{ config.site_description }}</p> For more details, please visit the following open-source projects:
-        <a href="https://github.com/yjcyxky/prophet-studio" target="_blank" title="Prophet Studio"
-          style="vertical-align: sub;">
-          <img src="https://img.shields.io/badge/Build_Your_Own_Knowledgebase-GitHub-white" alt="Status">
-        </a>
-        <a href="https://github.com/yjcyxky/biomedgps" target="_blank" title="BiomedGPS" style="vertical-align: sub;">
-          <img src="https://img.shields.io/badge/Knowledge_Graph_for_BioMedicine-GitHub-white" alt="Status">
-        </a>
-        <!-- <a href="https://github.com/yjcyxky/graph-builder" target="_blank" title="Knowledge Graph Builder">
-            <img src="https://img.shields.io/badge/Knowledge_Graph_Builder-GitHub-blue" alt="Status">
-          </a>
-          <a href="https://github.com/yjcyxky/ontology-matcher" target="_blank" title="OntologyMatcher">
-            <img src="https://img.shields.io/badge/Ontology_Matcher-GitHub-blue" alt="Status">
-          </a> -->
-        <a href="https://github.com/chinese-quartet" style="vertical-align: sub;">
-          <img alt="Status" src="https://img.shields.io/badge/Quality_Control_for_MultiOmics_Data-GitHub-white">
-        </a>
-        <div style="margin-top: 30px;">
-          <!-- <a href="{{ page.next_page.url | url }}" style="margin-right: 0.5rem;" title="{{ page.next_page.title | e }}"
-            class="md-button md-button--primary">
-            Ongoing Projects
-          </a> -->
-          <a href="https://www.prophetdb.org/publications/" target="_blank"
-            style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;"
-            title="Publication List" class="md-button">
-            Publications
-          </a>
-          <a href="https://github.com/open-prophetdb" target="_blank"
-            style="color: var(--md-primary-bg-color); margin-right: 0.5rem; margin-top: 0.5rem;" title="Follow Us"
-            class="md-button">
-            Follow Us on GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="showcase-container">
-      <a href="https://drugs.3steps.cn" target="_blank"
-        title="A Network Medicine Platform with knowledge graph and graph neural network for drug repurposing and disease mechanism.">
-        <img class="image" src="/assets/images/network-medicine-webpage.png" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/Network_Medicine_Platform:_Unlocking_Potential_of_Existing_Drugs-Online_System-blue">
-        <p class="desc">A Network Medicine Platform with knowledge graph and graph neural network for drug repurposing
-          and disease mechanism.</p>
+<!-- Modern Hero Section -->
+<section class="modern-hero">
+  <div class="hero-content">
+    <h1 class="hero-title">OpenProphetDB</h1>
+    <p class="hero-subtitle">
+      An open research community dedicated to <strong>unlocking the therapeutic potential of existing drugs</strong>
+      for patients with rare and complex diseases. We advance precision medicine through the integration of
+      Electronic Health Records, Knowledge Graphs, Multi-Omics Data, and Deep Learning Models.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://github.com/open-prophetdb" target="_blank" class="hero-btn hero-btn-primary">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+            clip-rule="evenodd" />
+        </svg>
+        Follow on GitHub
       </a>
-      <svg viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet"
-        style="position: absolute; top: 30px; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
-
-        <!-- 曲线连线 -->
-        <path d="M 200 200 C 400 100, 600 300, 800 200" stroke="#5ca9f8" stroke-width="2" fill="none"
-          stroke-dasharray="10 10">
-          <animate attributeName="stroke-dashoffset" from="0" to="20" dur="1s" repeatCount="indefinite" />
-        </path>
-
-        <!-- 人(用户)节点 -->
-        <image href="https://img.icons8.com/ios-filled/50/5ca9f8/user.png" x="320" y="120" width="24" height="24" />
-        <circle cx="332" cy="132" r="14" fill="none" stroke="#5ca9f8" stroke-width="2" opacity="0.5" />
-
-        <!-- 数据库节点 -->
-        <image href="https://img.icons8.com/ios-filled/50/7ed3f7/database.png" x="500" y="220" width="24" height="24" />
-        <circle cx="512" cy="232" r="14" fill="none" stroke="#7ed3f7" stroke-width="2" opacity="0.5" />
-
-        <!-- 算法(芯片)节点 -->
-        <image href="https://img.icons8.com/ios-filled/50/7ed3f7/artificial-intelligence.png" x="650" y="150" width="24"
-          height="24" />
-        <circle cx="662" cy="162" r="14" fill="none" stroke="#7ed3f7" stroke-width="2" opacity="0.5" />
-
-        <!-- 两端连接点 -->
-        <circle cx="200" cy="200" r="10" fill="#5ca9f8" />
-        <circle cx="800" cy="200" r="10" fill="#5ca9f8" />
-      </svg>
-      <!-- <a href="https://chromewebstore.google.com/detail/network-medicine-extensio/eamandgbalpjppofkhbefbbhckkkengp?authuser=0&hl=en"
-        target="_blank"
-        title="This extension enables biomedical researchers to curate, annotate, and synchronize literature-derived findings.">
-        <img class="image" src="/assets/images/network-medicine-extension.png" alt="Curate Findings from Literature" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/Network_Medicine_Extension:_Curate_Findings_from_Literature-Chrome_Extension-blue">
-        <p class="desc">This Chrome extension enables biomedical researchers to curate, annotate, and synchronize
-          literature-derived findings into a Network Medicine Platform (https://drugs.3steps.cn).</p>
-      </a> -->
-      <a href="https://indexd.org" target="_blank"
-        title="BioMiner Indexd is a hash-based data indexing and tracking service providing globally unique identifiers.">
-        <img class="image" src="/assets/images/indexd.png" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/IndexD:_Indexing_and_Sharing_MultiOmics_Data-Online_System-blue">
-        <p class="desc">The BioMiner Indexd standardizes and indexes clinical and multi-omics data through SOP-based
-          processing, including collection, quality control, and cleaning. Omics files and metadata are converted into
-          efficient, searchable datasets with versioning and unified indexing, supporting data integration and reuse.
-        </p>
-      </a>
-    </div>
-    <div class="showcase-container" style="display: none;">
-      <a href="https://chinese-quartet.org" target="_blank"
-        title="The Quartet Project provides publicly accessible multi-omics reference materials and practical tools to enhance the reproducibility and reliability of multi-omics results. Well-characterized multiomics reference materials and quality control metrics pertinent to precision medicine study purposes can be used to measure and mitigate technical variation, enabling more accurate cross-batch and cross-omics data integration in increasingly large-scale and longitudinal studies such as the International Human Phenome Project.">
-        <img class="image" src="/assets/images/chinese-quartet.png" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/Quartet_Data_Portal:_For_MultiOmics_Data_Quality_Control-Online_System-blue">
-        <p class="desc">The Quartet Project provides publicly accessible multi-omics reference materials and practical
-          tools
-          to enhance the reproducibility and reliability of multi-omics results.</p>
-      </a>
-      <a href="https://rapex.prophetdb.org" target="_blank"
-        title="RAPEX is an open-source platform comprising various transcriptome datasets and analyzing tools, as well as a knowledge graph providing a multi-omics network linking vast other factors related to the research questions.">
-        <img class="image" src="/assets/images/rapex.png" alt="Understand Toxicants" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/Rapex:_Understand_Toxicants-Online_System-blue">
-        <p class="desc">RAPEX is an open-source platform comprising various transcriptome datasets and analyzing tools,
-          as
-          well as a knowledge graph providing a multi-omics network linking vast other factors related to the research
-          questions.</p>
-      </a>
-      <a href="https://cbioportal.3steps.cn/" target="_blank"
-        title="The Fudan Data Portal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.">
-        <img class="image" src="/assets/images/cbioportal.png" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/Data_Portal_for_MultiOmics_Data-Online_System-blue">
-        <p class="desc">The Fudan Data Portal for Cancer Genomics provides visualization, analysis and download of
-          large-scale cancer genomics data sets.</p>
-      </a>
-      <a href="https://biosolver.cn" target="_blank"
-        title="GuideScoper integrates the experimental data (including those negative results) of gRNA from different cells or laboratories, which not only provides clues for finding the optimal gRNA sequence of a specific gene but also for the cross-checking of experimental results. In the follow-up plan, we will link the gRNAs with cell phenotype data to provide detailed information for functional genomics and drug development.">
-        <img class="image" src="/assets/images/guidescoper.png" />
-        <img class="title" alt="Status"
-          src="https://img.shields.io/badge/GuideScoper:_Find_the_Best_sgRNAs-Online_System-blue">
-        <p class="desc">GuideScoper integrates the experimental data (including those negative results) of gRNA from
-          different cells or laboratories, which not only provides clues for finding the optimal gRNA sequence of a
-          specific gene but also for the cross-checking of experimental results. In the follow-up plan, we will link the
-          gRNAs with cell phenotype data to provide detailed information for functional genomics and drug development.
-        </p>
+      <a href="https://www.prophetdb.org/publications/" target="_blank" class="hero-btn hero-btn-secondary">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        View Publications
       </a>
     </div>
   </div>
 </section>
+
+<!-- Features Section -->
+<section class="features-section">
+  <div class="section-header">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="section-subtitle">
+      We focus on rare and complex diseases such as ME/CFS, Long Covid, ALS, and more,
+      leveraging cutting-edge technologies to accelerate drug discovery and precision medicine.
+    </p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🏥</div>
+      <h3 class="feature-title">Electronic Health Records</h3>
+      <p class="feature-description">
+        Integrate and analyze electronic health records to understand patient phenotypes,
+        disease progression, and treatment outcomes for rare and complex diseases.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🧬</div>
+      <h3 class="feature-title">Multi-Omics Data Integration</h3>
+      <p class="feature-description">
+        Curate and analyze multi-omics data from public databases and literature for rare and complex diseases,
+        enabling comprehensive molecular profiling and biomarker discovery.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🕸️</div>
+      <h3 class="feature-title">Biomedical Knowledge Graph</h3>
+      <p class="feature-description">
+        Build comprehensive biomedical knowledge graphs for drug repurposing and disease mechanism understanding,
+        connecting genes, drugs, diseases, and molecular pathways.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <h3 class="feature-title">Deep Learning Models</h3>
+      <p class="feature-description">
+        Develop advanced AI models that integrate multi-omics data and knowledge graphs to predict drug candidates
+        and understand disease mechanisms for rare and complex diseases.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section">
+  <div class="section-header">
+    <h2 class="section-title">Our Platforms & Tools</h2>
+    <p class="section-subtitle">
+      Open-source platforms and tools developed by our community for drug discovery,
+      data analysis, and precision medicine research.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-image">💊</div>
+      <div class="project-content">
+        <h3 class="project-title">Drug & Target</h3>
+        <p class="project-description">
+          Comprehensive drug and target databases with advanced search and analysis tools for drug repurposing research.
+        </p>
+        <span class="project-badge">Database</span>
+        <a href="/drug_target/"
+          style="display: block; margin-top: 1rem; color: #667eea; text-decoration: none; font-weight: 500; font-size: 1rem;">
+          Explore Database →
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">📊</div>
+      <div class="project-content">
+        <h3 class="project-title">MultiOmics Data</h3>
+        <p class="project-description">
+          Multi-omics data analysis platforms and quality control tools for comprehensive molecular profiling.
+        </p>
+        <span class="project-badge">Analysis</span>
+        <a href="/multiomics_data/"
+          style="display: block; margin-top: 1rem; color: #667eea; text-decoration: none; font-weight: 500; font-size: 1rem;">
+          View Tools →
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">🤖</div>
+      <div class="project-content">
+        <h3 class="project-title">MultiAgents</h3>
+        <p class="project-description">
+          Multi-agent systems and AI tools for automated biomedical research and knowledge discovery.
+        </p>
+        <span class="project-badge">AI Tools</span>
+        <a href="/multiagents/"
+          style="display: block; margin-top: 1rem; color: #667eea; text-decoration: none; font-weight: 500; font-size: 1rem;">
+          Explore AI Tools →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Team Members</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Publications</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Open Source Projects</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5+</div>
+      <div class="stat-label">Online Platforms</div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Preview Section -->
+<section class="team-preview">
+  <div class="section-header">
+    <h2 class="section-title">Our Team</h2>
+    <p class="section-subtitle">
+      Meet the researchers and developers behind OpenProphetDB, working across prestigious institutions worldwide.
+    </p>
+  </div>
+
+  <!-- Team Members Row -->
+  <div class="team-section">
+    <h3 class="team-section-title">Team Members</h3>
+    <div class="team-scroll-container">
+      <div class="team-scroll-grid">
+        <div class="team-card">
+          <img src="/assets/images/jingchengyang.jpeg" alt="Jingcheng Yang" class="team-avatar">
+          <div class="team-name">Jingcheng Yang (杨竞成)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Harvard Medical School & MGH</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/zihanran.png" alt="Zihan Ran" class="team-avatar">
+          <div class="team-name">Zihan Ran (冉子涵)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Harvard Medical School & MGH</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jun Shang" class="team-avatar">
+          <div class="team-name">Jun Shang (商骏)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Fudan University & FUSCC</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/yechaohuang.png" alt="Yechao Huang" class="team-avatar">
+          <div class="team-name">Yechao Huang (黄业超)</div>
+          <div class="team-position">Senior Scientist</div>
+          <div class="team-institution">BGI Genomics</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Zhixing Zhu" class="team-avatar">
+          <div class="team-name">Zhixing Zhu (朱之星)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">Shanghai Jiao Tong University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jiaqi Weng" class="team-avatar">
+          <div class="team-name">Jiaqi Weng (翁嘉绮)</div>
+          <div class="team-position">Ph.D. Student</div>
+          <div class="team-institution">Zhejiang University of Technology</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Xiang Li" class="team-avatar">
+          <div class="team-name">Xiang Li (李翔)</div>
+          <div class="team-position">IT Manager</div>
+          <div class="team-institution">&nbsp;</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Liang Liu" class="team-avatar">
+          <div class="team-name">Liang Liu (刘梁)</div>
+          <div class="team-position">Physician</div>
+          <div class="team-institution">Fudan University & ZS Hospital</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/fengzhu.png" alt="Feng Zhu" class="team-avatar">
+          <div class="team-name">Feng Zhu (朱枫)</div>
+          <div class="team-position">Ph.D. Student</div>
+          <div class="team-institution">Fudan University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/penghaoxu.jpg" alt="Penghao Xu" class="team-avatar">
+          <div class="team-name">Penghao Xu (徐鹏昊)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Georgia Tech</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/xiaofeili.png" alt="Xiaofei Li" class="team-avatar">
+          <div class="team-name">Xiaofei Li (黎小飞)</div>
+          <div class="team-position">Ph.D.</div>
+          <div class="team-institution">Guilin Medical University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Tianyuan Cheng" class="team-avatar">
+          <div class="team-name">Tianyuan Cheng (成天元)</div>
+          <div class="team-position">Research Data Analyst</div>
+          <div class="team-institution">Johns Hopkins University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Wenjie Chen" class="team-avatar">
+          <div class="team-name">Wenjie Chen (陈文杰)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">MD Anderson Cancer Center</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jinrong Ma" class="team-avatar">
+          <div class="team-name">Jinrong Ma (马金荣)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">Sanofi</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Dongchang Qin" class="team-avatar">
+          <div class="team-name">Dongchang Qin (秦东昌)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">AbbVie</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jianming Wei" class="team-avatar">
+          <div class="team-name">Jianming Wei (魏建铭)</div>
+          <div class="team-position">Ph.D. Candidate</div>
+          <div class="team-institution">Utrecht University</div>
+        </div>
+
+        <!-- Duplicate cards for seamless scrolling -->
+        <div class="team-card">
+          <img src="/assets/images/jingchengyang.jpeg" alt="Jingcheng Yang" class="team-avatar">
+          <div class="team-name">Jingcheng Yang (杨竞成)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Harvard Medical School & MGH</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/zihanran.png" alt="Zihan Ran" class="team-avatar">
+          <div class="team-name">Zihan Ran (冉子涵)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Harvard Medical School & MGH</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jun Shang" class="team-avatar">
+          <div class="team-name">Jun Shang (商骏)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Fudan University & FUSCC</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/yechaohuang.png" alt="Yechao Huang" class="team-avatar">
+          <div class="team-name">Yechao Huang (黄业超)</div>
+          <div class="team-position">Senior Scientist</div>
+          <div class="team-institution">BGI Genomics</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Zhixing Zhu" class="team-avatar">
+          <div class="team-name">Zhixing Zhu (朱之星)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">Shanghai Jiao Tong University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jiaqi Weng" class="team-avatar">
+          <div class="team-name">Jiaqi Weng (翁嘉绮)</div>
+          <div class="team-position">Ph.D. Student</div>
+          <div class="team-institution">Zhejiang University of Technology</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Xiang Li" class="team-avatar">
+          <div class="team-name">Xiang Li (李翔)</div>
+          <div class="team-position">IT Manager</div>
+          <div class="team-institution">&nbsp;</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Liang Liu" class="team-avatar">
+          <div class="team-name">Liang Liu (刘梁)</div>
+          <div class="team-position">Physician</div>
+          <div class="team-institution">Fudan University & ZS Hospital</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/fengzhu.png" alt="Feng Zhu" class="team-avatar">
+          <div class="team-name">Feng Zhu (朱枫)</div>
+          <div class="team-position">Ph.D. Student</div>
+          <div class="team-institution">Fudan University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/penghaoxu.jpg" alt="Penghao Xu" class="team-avatar">
+          <div class="team-name">Penghao Xu (徐鹏昊)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">Georgia Tech</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/xiaofeili.png" alt="Xiaofei Li" class="team-avatar">
+          <div class="team-name">Xiaofei Li (黎小飞)</div>
+          <div class="team-position">Ph.D.</div>
+          <div class="team-institution">Guilin Medical University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Tianyuan Cheng" class="team-avatar">
+          <div class="team-name">Tianyuan Cheng (成天元)</div>
+          <div class="team-position">Research Data Analyst</div>
+          <div class="team-institution">Johns Hopkins University</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Wenjie Chen" class="team-avatar">
+          <div class="team-name">Wenjie Chen (陈文杰)</div>
+          <div class="team-position">Post-doc Fellow</div>
+          <div class="team-institution">MD Anderson Cancer Center</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jinrong Ma" class="team-avatar">
+          <div class="team-name">Jinrong Ma (马金荣)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">Sanofi</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Dongchang Qin" class="team-avatar">
+          <div class="team-name">Dongchang Qin (秦东昌)</div>
+          <div class="team-position">Scientist</div>
+          <div class="team-institution">AbbVie</div>
+        </div>
+
+        <div class="team-card">
+          <img src="/assets/images/unknown.jpg" alt="Jianming Wei" class="team-avatar">
+          <div class="team-name">Jianming Wei (魏建铭)</div>
+          <div class="team-position">Ph.D. Candidate</div>
+          <div class="team-institution">Utrecht University</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Institutions Row -->
+  <div class="team-section">
+    <h3 class="team-section-title">Partner Institutions</h3>
+    <div class="institution-scroll-container">
+      <div class="institution-scroll-grid">
+        <div class="institution-card">
+          <img src="/assets/images/harvard.png" alt="Harvard" class="institution-logo">
+          <div class="institution-name">Harvard University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/hms.png" alt="HMS" class="institution-logo">
+          <div class="institution-name">Harvard Medical School</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/mgh.png" alt="MGH" class="institution-logo">
+          <div class="institution-name">Massachusetts General Hospital</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/fudan.jpeg" alt="Fudan" class="institution-logo">
+          <div class="institution-name">Fudan University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/georgia-tech.png" alt="Georgia Tech" class="institution-logo">
+          <div class="institution-name">Georgia Institute of Technology</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/shanghaijiaotong.png" alt="Shanghai Jiao Tong" class="institution-logo">
+          <div class="institution-name">Shanghai Jiao Tong University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/zhongshan.jpeg" alt="Zhongshan" class="institution-logo">
+          <div class="institution-name">Zhongshan Hospital</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/utrecht.png" alt="Utrecht" class="institution-logo">
+          <div class="institution-name">Utrecht University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/heidelberg.png" alt="Heidelberg" class="institution-logo">
+          <div class="institution-name">Heidelberg University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/guilin_medical_university.png" alt="Guilin Medical" class="institution-logo">
+          <div class="institution-name">Guilin Medical University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/abbvie.png" alt="AbbVie" class="institution-logo">
+          <div class="institution-name">AbbVie</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/sanofi.png" alt="Sanofi" class="institution-logo">
+          <div class="institution-name">Sanofi</div>
+        </div>
+
+        <!-- Duplicate cards for seamless scrolling -->
+        <div class="institution-card">
+          <img src="/assets/images/harvard.png" alt="Harvard" class="institution-logo">
+          <div class="institution-name">Harvard University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/hms.png" alt="HMS" class="institution-logo">
+          <div class="institution-name">Harvard Medical School</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/mgh.png" alt="MGH" class="institution-logo">
+          <div class="institution-name">Massachusetts General Hospital</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/fudan.jpeg" alt="Fudan" class="institution-logo">
+          <div class="institution-name">Fudan University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/georgia-tech.png" alt="Georgia Tech" class="institution-logo">
+          <div class="institution-name">Georgia Institute of Technology</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/shanghaijiaotong.png" alt="Shanghai Jiao Tong" class="institution-logo">
+          <div class="institution-name">Shanghai Jiao Tong University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/zhongshan.jpeg" alt="Zhongshan" class="institution-logo">
+          <div class="institution-name">Zhongshan Hospital</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/utrecht.png" alt="Utrecht" class="institution-logo">
+          <div class="institution-name">Utrecht University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/heidelberg.png" alt="Heidelberg" class="institution-logo">
+          <div class="institution-name">Heidelberg University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/guilin_medical_university.png" alt="Guilin Medical" class="institution-logo">
+          <div class="institution-name">Guilin Medical University</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/abbvie.png" alt="AbbVie" class="institution-logo">
+          <div class="institution-name">AbbVie</div>
+        </div>
+
+        <div class="institution-card">
+          <img src="/assets/images/sanofi.png" alt="Sanofi" class="institution-logo">
+          <div class="institution-name">Sanofi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 3rem;">
+    <a href="/team_members/" class="hero-btn hero-btn-primary" style="text-decoration: none;">
+      View Full Team Details
+    </a>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section style="padding: 4rem 0; background: #1a202c; color: white; text-align: center;">
+  <div style="max-width: 1500px; margin: 0 auto; padding: 0 2rem;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Join Our Community</h2>
+    <p style="margin-bottom: 2rem; opacity: 0.9; line-height: 1.6; font-size: 1.1rem;">
+      We are looking for partners who are highly motivated on drug repurposing to join the OpenProphetDB community.
+      Let's work together to unlock the therapeutic potential of existing drugs for patients with rare and complex
+      diseases.
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="/contact/" class="hero-btn hero-btn-primary" style="text-decoration: none;">
+        Contact Us
+      </a>
+      <a href="https://github.com/open-prophetdb" target="_blank" class="hero-btn hero-btn-secondary"
+        style="text-decoration: none;">
+        Contribute on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+<script type='text/javascript' id='clustrmaps'
+  src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=MPWClGSAiOC-0JlMxUP_pPwFfxi1-6reWYzVXQTWDYc&co=1a202c'></script>
+
 {% endblock %}
 
 <!-- Content -->

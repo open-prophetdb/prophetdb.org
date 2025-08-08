@@ -12,8 +12,25 @@ article>p {
   height: 90vh;
 }
 
-.md-tabs__link {
-  font-size: 0.8rem;
+.md-header {
+  padding-bottom: 10px;
+}
+
+.md-header .md-header__title {
+  font-size: 1.1rem;
+}
+
+/* Remove spacing, as we cannot hide it completely */
+.md-header .md-main__inner {
+  margin: 0;
+}
+
+.md-header .md-tabs {
+  background: transparent;
+}
+
+.md-header .md-tabs__link {
+  font-size: 1rem;
 }
 
 .md-source-file {
