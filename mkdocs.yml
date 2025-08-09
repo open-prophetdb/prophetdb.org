@@ -45,6 +45,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
+    - navigation.expand
     - search.highlight
     - search.suggest
     - search.share

@@ -36,7 +36,10 @@ hide:
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         <a href="https://chromewebstore.google.com/detail/network-medicine-extensio/eamandgbalpjppofkhbefbbhckkkengp?authuser=0&hl=en" class="btn btn-outline-secondary" target="_blank">
-                            <i class="fab fa-chrome"></i> Install Chrome Extension
+                            <i class="fab fa-chrome"></i> Install Extension
+                        </a>
+                        <a href="https://drugs.3steps.cn/#/statistics/curation-statistics?hideHeader=true" class="btn btn-outline-secondary" target="_blank">
+                            <i class="fas fa-chart-line"></i> Statistics
                         </a>
                     </div>
                 </div>
@@ -67,6 +70,9 @@ hide:
                         </a>
                         <a href="https://open-prophetdb.github.io/biomedgps-data/" class="btn btn-outline-secondary" target="_blank">
                             <i class="fas fa-book"></i> Documentation
+                        </a>
+                        <a href="https://drugs.3steps.cn/#/statistics/kg-statistics?hideHeader=true" class="btn btn-outline-secondary" target="_blank">
+                            <i class="fas fa-chart-line"></i> Statistics
                         </a>
                     </div>
                 </div>
