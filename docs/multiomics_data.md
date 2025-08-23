@@ -29,9 +29,12 @@ hide:
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        The MultiOmics Data Network includes 400+ datasets, 5+ omics types (Genomics, Transcriptomics, Proteomics, Metabolomics, Pathomics, Radiomics etc.), and 80,000+ samples.
+                        The MultiOmics Data Network includes 400+ datasets, 6+ omics types (Genomics, Transcriptomics, Proteomics, Metabolomics, Pathomics, Radiomics etc.), and 0,000+ samples.
                     </p>
                     <div class="btn-group d-flex">
+                        <a href="https://indexd.org/statistics" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-chart-bar"></i> Statistics
+                        </a>
 
                     </div>
                 </div>
