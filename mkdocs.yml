@@ -71,8 +71,8 @@ nav:
   - Home: index.md
   # - Projects: projects.md
   # - Goals: goals.md
-  # - 'Drug & Target': drug_target.md
-  - 'Drug & Target': https://docs.3steps.cn
+  - 'Drug & Target': drug_target.md
+  # - 'Drug & Target': https://docs.3steps.cn
   # - 'Platform & Resources': platform.md
   - 'MultiOmics Data': multiomics_data.md
   - 'MultiAgents': multiagents.md
