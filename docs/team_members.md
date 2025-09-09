@@ -196,14 +196,14 @@ Focus on the execution of sub-projects and the development and maintenance of in
         <a target="_blank" href="https://scholar.google.com/citations?user=t5GnNxkAAAAJ&hl=en">Website</a>
       </div>
   </div>
-  <div class="member-card">
+<!--   <div class="member-card">
       <img src="/assets/images/unknown.jpg" />
       <div class="name">Lin Lin</div>
       <div>Duke University</div>
       <div>
         <a target="_blank" href="https://scholars.duke.edu/person/lin.l">Website</a>
       </div>
-  </div>
+  </div> -->
 </div>
 
 <span style="margin-bottom: 20px;" />
