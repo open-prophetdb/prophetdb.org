@@ -76,6 +76,8 @@ nav:
   # - 'Platform & Resources': platform.md
   - 'MultiOmics Data': multiomics_data.md
   - 'MultiAgents': multiagents.md
+  - 'Collaborations':
+      - 'Best Practices for ML Collaboration': tools/ml_collaboration.md
   - Publications: publications.md
   - Team: team_members.md
   - 'Join Us': contact.md
