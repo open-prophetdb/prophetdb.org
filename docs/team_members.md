@@ -46,7 +46,7 @@ Focus on the execution of sub-projects and the development and maintenance of in
     </div>
   </div>
   <div class="member-card">
-    <img src="/assets/images/unknown.jpg"/>
+    <img src="/assets/images/zhuzhixing.png"/>
     <div class="name">Zhixing Zhu (朱之星)</div>
     <div>Shanghai Jiao Tong University</div>
     <div>
