@@ -1,0 +1,248 @@
+article>p {
+  text-align: justify;
+}
+
+.mdx-container {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,
+    linear-gradient(to bottom,
+      var(--md-primary-fg-color),
+      #a63fd9 99%,
+      var(--md-default-bg-color) 99%);
+  padding-top: 1rem;
+  height: 90vh;
+}
+
+.md-header {
+  padding-bottom: 10px;
+}
+
+.md-header .md-header__title {
+  font-size: 1.1rem;
+}
+
+/* Remove spacing, as we cannot hide it completely */
+.md-header .md-main__inner {
+  margin: 0;
+}
+
+.md-header .md-tabs {
+  background: transparent;
+}
+
+.md-header .md-tabs__link {
+  font-size: 1rem;
+}
+
+.md-source-file {
+  font-size: 1rem;
+}
+
+/* For labeling something with color */
+.label {
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+}
+
+.success {
+  background-color: #04aa6d;
+}
+
+/* Green */
+.info {
+  background-color: #2196f3;
+}
+
+/* Blue */
+.warning {
+  background-color: #ff9800;
+}
+
+/* Orange */
+.danger {
+  background-color: #f44336;
+}
+
+/* Red */
+.other {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+/* Gray */
+
+/* Vistor Statistics */
+iframe[style^="background"] {
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+}
+
+.md-content img {
+  max-width: unset !important;
+}
+
+.showcase-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.showcase-container a .image {
+  /* height: 100%; */
+  margin: 10px;
+}
+
+.showcase-container a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.mdx-hero__content .md-button:hover {
+  background-color: unset;
+  border-color: unset;
+}
+
+.mdx-hero__content .md-button--primary:hover {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+.showcase-container .title {
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.showcase-container .desc {
+  /* Only show the top 3 lines, if overflow, show the ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: none; */
+  margin: -85px 0px;
+}
+
+/* media */
+@media screen and (max-width: 768px) {
+  .showcase-container a {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .showcase-container a {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .showcase-container a {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 300px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.member-card img {
+  width: 150px;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+}
+
+.member-card .name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.member-card .position {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 默认电脑，每行4个 */
+.member-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-right: 20px;
+}
+
+/* 平板，每行3个 */
+@media (max-width: 1024px) {
+  .member-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+}
+
+/* 手机，每行2个 */
+@media (max-width: 768px) {
+  .member-card {
+    flex: 0 0 calc(50% - 20px);
+    margin-right: 20px;
+  }
+}
+
+.custom-tag {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.partner-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.partner-logo img {
+  width: 360px;
+  height: 120px;
+  object-fit: contain;
+  max-width: 360px;
+  max-height: 120px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,1340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="OpenProphetDB is an open research community dedicated to <b>unlocking the therapeutic potential of existing drugs for patients with rare and complex diseases</b>. We advance precision medicine through the integration of <b>Electronic Health Records</b>, <b>Knowledge Graphs</b>, <b>Multi-Omics Data</b>, and <b>Deep Learning Models</b> to elucidate molecular mechanisms of human diseases and accelerate drug repurposing for unmet medical needs.">
+      
+      
+        <meta name="author" content="Jingcheng Yang">
+      
+      
+      <link rel="icon" href="../assets/images/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.2.14">
+    
+    
+      
+        <title>OpenProphetDB - OpenProphetDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3de6f41f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/timeline.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#papers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+<span>
+  <strong>OpenProphetDB</strong>:
+  We are looking for partners who are highly motivated on drug repurposing to join the OpenProphetDB community. Please contact us if you are interested.
+</span>
+
+          </div>
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.prophetdb.org" title="OpenProphetDB" class="md-header__button md-logo" aria-label="OpenProphetDB" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenProphetDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OpenProphetDB
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/open-prophetdb" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenProphetDB
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../drug_target/" class="md-tabs__link">
+      Drug & Target
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../multiomics_data/" class="md-tabs__link">
+      MultiOmics Data
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../multiagents/" class="md-tabs__link">
+      MultiAgents
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tools/ml_collaboration/" class="md-tabs__link">
+        Collaborations
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Publications
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../team_members/" class="md-tabs__link">
+      Team
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../contact/" class="md-tabs__link">
+      Join Us
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.prophetdb.org" title="OpenProphetDB" class="md-nav__button md-logo" aria-label="OpenProphetDB" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    OpenProphetDB
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/open-prophetdb" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenProphetDB
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drug_target/" class="md-nav__link">
+        Drug & Target
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiomics_data/" class="md-nav__link">
+        MultiOmics Data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiagents/" class="md-nav__link">
+        MultiAgents
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Collaborations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Collaborations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Collaborations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/ml_collaboration/" class="md-nav__link">
+        Best Practices for ML Collaboration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Publications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Publications
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#papers" class="md-nav__link">
+    Papers
+  </a>
+  
+    <nav class="md-nav" aria-label="Papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2024" class="md-nav__link">
+    2024
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    2023
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022" class="md-nav__link">
+    2022
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2018" class="md-nav__link">
+    2018
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2017" class="md-nav__link">
+    2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2014" class="md-nav__link">
+    2014
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-systems-and-databases" class="md-nav__link">
+    Online Systems and Databases
+  </a>
+  
+    <nav class="md-nav" aria-label="Online Systems and Databases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quartet-data-portal" class="md-nav__link">
+    Quartet Data Portal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gliomarker" class="md-nav__link">
+    GlioMarker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../team_members/" class="md-nav__link">
+        Team
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        Join Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#papers" class="md-nav__link">
+    Papers
+  </a>
+  
+    <nav class="md-nav" aria-label="Papers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2024" class="md-nav__link">
+    2024
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    2023
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022" class="md-nav__link">
+    2022
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2019" class="md-nav__link">
+    2019
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2018" class="md-nav__link">
+    2018
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2017" class="md-nav__link">
+    2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2014" class="md-nav__link">
+    2014
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-systems-and-databases" class="md-nav__link">
+    Online Systems and Databases
+  </a>
+  
+    <nav class="md-nav" aria-label="Online Systems and Databases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quartet-data-portal" class="md-nav__link">
+    Quartet Data Portal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gliomarker" class="md-nav__link">
+    GlioMarker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+
+                <!-- Edit and view button -->
+
+
+
+<a href="https://github.com/open-prophetdb/prophetdb.org/edit/main/docs/publications.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+</a>
+<a href="https://github.com/open-prophetdb/prophetdb.org/edit/main/docs/publications.md" title="View source of this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+</a>
+
+
+
+
+<!-- Tags -->
+
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it
+  doesn't, the page title (or respectively site name) is used
+  as the main headline.
+-->
+
+<h1>Publications</h1>
+
+
+<!-- Markdown content -->
+<h2 id="papers">Papers<a class="headerlink" href="#papers" title="Permanent link">&para;</a></h2>
+<h3 id="2024">2024<a class="headerlink" href="#2024" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Poor prognosis of stage I lung adenocarcinoma patients determined by elevated expression over pre/minimally invasive status of COL11A1 and THBS2 in the focal adhesion pathway</b></span>
+  <span>Jun Shang#, Yue Zhao#, He Jiang#, <b>Jingcheng Yang</b>, ..., Leming Shi*, Haiquan Chen*, Yuanting Zheng*.</span>
+  <span>Under Review</span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>BEdeepon: an in silico tool for prediction of base editor efficiencies and outcomes</b></span>
+  <span>Chengdong Zhang#, Daqi Wang#, ..., <b>Jingcheng Yang</b>, ..., Yongming Wang*.</span>
+  <span>Under Review</span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Chronic PM2.5 Exposure Disrupts Intestinal Barrier Integrity via Microbial Dysbiosis-Triggered TLR2/5-MyD88-NLRP3 Inflammasome Activation</b></span>
+  <span><b>Zihan Ran#</b>, <b>Jingcheng Yang#</b>, Liang Liu#, Shaobo Wu, YanPeng An, Wanwan Hou, Tianyuan Cheng, Youyi Zhang, Yiqing Zhang, Yechao Huang, Qianyue Zhang, Jiaping Wan, Xuemei Li, Baoling Xing, Yuchen Ye, Penghao Xu, Zhenghu Chen*, Jinzhuo Zhao*, Rui Li*</span>
+  <span><i>Environmental Research</i></span>
+  <span><a href="https://doi.org/10.1016/j.envres.2024.119415" target="_blank">DOI: 10.1016/j.envres.2024.119415</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/38906446/" target="_blank">PMID: 38906446</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>rNMPID: a database for riboNucleoside MonoPhosphates in DNA</b></span>
+  <span><b>Jingcheng Yang#</b>, Mo Sun#, <b>Zihan Ran</b>, Taehwan Yang, Deepali L Kundnani, Francesca Storici*, Penghao Xu*.</span>
+  <span><i>Bioinformatics Advances</i></span>
+  <span><a href="https://doi.org/10.1093/bioadv/vbae063" target="_blank">DOI: 10.1093/bioadv/vbae063</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/38736683/" target="_blank">PMID: 38736683</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<h3 id="2023">2023<a class="headerlink" href="#2023" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Multi-omics data integration using ratio-based quantitative profiling with Quartet reference materials</b></span>
+  <span>Yuanting Zheng#, Yaqing Liu#, <b>Jingcheng Yang#</b>, ..., Leming Shi*.</span>
+  <span><i>Nature Biotechnology</i></span>
+  <span><a href="https://doi.org/10.1038/s41587-023-01934-1" target="_blank">DOI: 10.1038/s41587-023-01934-1</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/37679543/" target="_blank">PMID: 37679543</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Quartet RNA reference materials improve the quality of transcriptomic data through ratio-based profiling</b></span>
+  <span>Ying Yu, Wanwan Hou, Yaqing Liu, Haiyan Wang, Lianhua Dong, Yuanbang Mai, Qingwang Chen, Zhihui Li, Shanyue Sun, <b>Jingcheng Yang</b>, Zehui Cao, Peipei Zhang, Yi Zi, Ruimei Liu, Jian Gao, Naixin Zhang, Jingjing Li, Luyao Ren, He Jiang, Jun Shang, Sibo Zhu, Xiaolin Wang, Tao Qing, Ding Bao, …Yuanting Zheng</span>
+  <span><i>Nature Biotechnology</i></span>
+  <span><a href="https://doi.org/10.1038/s41587-023-01867-9" target="_blank">DOI: 10.1038/s41587-023-01867-9</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/37679545/" target="_blank">PMID: 37679545</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Quartet DNA reference materials and datasets for comprehensively evaluating germline variants calling performance</b></span>
+  <span>Luyao Ren#, Xiaoke Duan#, Lianhua Dong#, Rui Zhang#, <b>Jingcheng Yang#</b>, ..., Leming Shi, Huixiao Hong, Jing Wang*, Shaohua Fan*, Xiang Fang*, Yuanting Zheng*.</span>
+  <span><i>Genome Biology</i></span>
+  <span><a href="https://doi.org/10.1186/s13059-023-03109-2" target="_blank">DOI: 10.1186/s13059-023-03109-2</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/38012772/" target="_blank">PMID: 38012772</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>The Quartet Data Portal: integration of community-wide resources for multiomics quality control</b></span>
+  <span><b>Jingcheng Yang#</b>, Yaqing Liu#, Jun Shang#, ..., Yuanting Zheng*, Leming Shi*.</span>
+  <span><i>Genome Biology</i></span>
+  <span><a href="https://doi.org/10.1186/s13059-023-03091-9" target="_blank">DOI: 10.1186/s13059-023-03091-9</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/37884999/" target="_blank">PMID: 37884999</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Singe-cell morphological and topological atlas reveals ecosystem diversity of human breast cancer</b></span>
+  <span>Shao Zhao#, Depin Chen#, Tong Fu#, <b>Jingcheng Yang#</b>, ..., Wentao Yang*, Yizhou Jiang*, Jun Xu*, Zhiming Shao*.</span>
+  <span><i>Nature Communications</i></span>
+  <span><a href="https://doi.org/10.1038/s41467-023-42504-y" target="_blank">DOI: 10.1038/s41467-023-42504-y</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/37880211/" target="_blank">PMID: 37880211</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Differences of molecular events driving pathological and radiological progression of lung adenocarcinoma</b></span>
+  <span>Jun Shang#, He Jiang#, Yue Zhao#, ..., <b>Jingcheng Yang*</b>, Haiquan Chen*, Yuanting Zheng*.</span>
+  <span><i>EBioMedicine</i></span>
+  <span>
+  <a href="https://doi.org/10.1016/j.ebiom.2023.104728" target="_blank">DOI: 10.1016/j.ebiom.2023.104728</a>
+  </span>
+  <span>
+  <a href="https://pubmed.ncbi.nlm.nih.gov/37506543/" target="_blank">PMID: 37506543</a>
+  </span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Prediction of base editor off-targets by deep learning</b></span>
+  <span>Chengdong Zhang#, Yuan Yang#, Tao Qi#, ..., <b>Jingcheng Yang</b>, ..., Hui Wang*, Bo Yu*, Yongming Wang*.</span>
+  <span><i>Nature Communications</i></span>
+  <span><a href="https://doi.org/10.1038/s41467-023-41004-3" target="_blank">DOI: 10.1038/s41467-023-41004-3</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/37660097/" target="_blank">PMID: 37660097</a></span>
+</div>
+
+<h3 id="2022">2022<a class="headerlink" href="#2022" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>GlioMarker: An integrated database for knowledge exploration of diagnostic biomarkers in gliomas</b></span>
+  <span><b>Zihan Ran#</b>, <b>Jingcheng Yang#</b>, Yaqing Liu#, ..., Tao Yang*.</span>
+  <span><i>Frontiers in Oncology</i></span>
+  <span><a href="https://doi.org/10.3389/fonc.2022.792055" target="_blank">DOI: 10.3389/fonc.2022.792055</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/36081550/" target="_blank">PMID: 36081550</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>BioVisReport: a lightweight website-builder for reproducible and interactive visualization of biomedical data of peer-reviewed publications</b></span>
+  <span><b>Jingcheng Yang</b>, Yaqing Liu, Jun Shang, Yechao Huang, Ying Yu, ..., Leming Shi, <b>Zihan Ran*</b>.</span>
+  <span><i>Computational and Structural Biotechnology Journal</i></span>
+  <span><a href="https://doi.org/10.1016/j.csbj.2022.06.009" target="_blank">DOI: 10.1016/j.csbj.2022.06.009</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/35782729/" target="_blank">PMID: 35782729</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Comprehensive microRNA-seq transcriptomic profiling across 11 organs, 4 ages, and 2 sexes of Fischer 344 rats</b></span>
+  <span>Xintong Yao, Shanyue Sun, Yi Zi, Yaqing Liu, <b>Jingcheng Yang</b>, Luyao Ren, ..., Yuanting Zheng.</span>
+  <span><i>Scientific Data</i></span>
+  <span><a href="https://doi.org/10.1038/s41597-022-01285-7" target="_blank">DOI: 10.1038/s41597-022-01285-7</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/35551205/" target="_blank">PMID: 35551205</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>A deep learning framework to predict multi-omics molecular features, subtypes and prognosis of triple-negative breast cancer from pathological images</b></span>
+  <span>Shen Zhao#, Chaoyang Yan#, Hong Lv#, <b>Jingcheng Yang#</b>, ..., Wentao Yang*, Yizhou Jiang*, Jun Xu*, Zhiming Shao*.</span>
+  <span><i>Fundamental Research</i></span>
+  <span><a href="https://doi.org/10.1016/j.fmre.2022.06.008" target="_blank">DOI: 10.1016/j.fmre.2022.06.008</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>A comprehensive genomic and transcriptomic dataset of triple-negative breast cancers</b></span>
+  <span>Qingwang Chen#, Yaqing Liu#, Yuechen Gao#, ..., Ding Ma*, <b>Jingcheng Yang*</b>, Zhiming Shao*, Ying Yu*.</span>
+  <span><i>Scientific Data</i></span>
+  <span><a href="https://doi.org/10.1038/s41597-022-01681-z" target="_blank">DOI: 10.1038/s41597-022-01681-z</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/36153392/" target="_blank">PMID: 36153392</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Assessing reproducibility of inherited variants detected with short-read whole genome sequencing</b></span>
+  <span>Bohu Pan#, Luyao Ren#, Vitor Onuchic#, ..., <b>Jingcheng Yang</b>, ..., Jun Shang, ..., Yuanting Zheng*, Huixiao Hong*.</span>
+  <span><i>Genome Biology</i></span>
+  <span><a href="https://doi.org/10.1186/s13059-021-02569-8" target="_blank">DOI: 10.1186/s13059-021-02569-8</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/34980216/" target="_blank">PMID: 34980216</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Comprehensive microRNA-seq transcriptomic profiling across 11 organs, 4 ages, and 2 sexes of Fischer 344 rats</b></span>
+  <span>Xintong Yao#, Shanyue Sun#, Yi Zi, Yaqing Liu, <b>Jingcheng Yang</b>, ..., Quanzhen Li*, Ying Yu*, Yuanting Zheng*.</span>
+  <span><i>Scientific Data</i></span>
+  <span><a href="https://doi.org/10.1038/s41597-022-01285-7" target="_blank">DOI: 10.1038/s41597-022-01285-7</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/35551205/" target="_blank">PMID: 35551205</a></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Advances in Exosome Biomarkers for Cervical Cancer</b></span>
+  <span><b>Zihan Ran</b>, Shaobo Wu, Zijing Ma, Xiuwen Chen, Jing Liu, <b>Jingcheng Yang*</b>.</span>
+  <span><i>Cancer Medicine</i></span>
+  <span><a href="https://doi.org/10.1002/cam4.4828" target="_blank">DOI: 10.1002/cam4.4828</a></span>
+  <span><a href="https://pubmed.ncbi.nlm.nih.gov/35578572/" target="_blank">PMID: 35578572</a></span>
+</div>
+
+<h3 id="2021">2021<a class="headerlink" href="#2021" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>A global metagenomic map of urban microbiomes and antimicrobial resistance</b></span>
+  <span>Danko D, Bezdan D, Afshin EE, Ahsanuddin S, Bhattacharya C, Butler DJ, ..., Bittner L.</span>
+  <span><i>Cell</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Functional consequences of a rare missense BARD1 c.403G>A germline mutation identified in a triple-negative breast cancer patient</b></span>
+  <span>Yuanting Zheng, Binying Li, ..., Jingcheng Yang, ..., Ying Yu*, Jiaxue Wu*, Xichun Hu*, Leming Shi*.</span>
+  <span><i>Breast Cancer Research</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Subchronic exposure to concentrated ambient PM2. 5 perturbs gut and lung microbiota as well as metabolic profiles in mice</b></span>
+  <span>Zihan Ran#, Yanpeng An#, Ji Zhou, Jingmin Yang, Youyi Zhang, Jingcheng Yang, ..., Rui Li*.</span>
+  <span><i>Environmental Pollution</i></span>
+</div>
+
+<h3 id="2020">2020<a class="headerlink" href="#2020" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>ECCDIA: an interactive web tool for the comprehensive analysis of clinical and survival data of esophageal cancer patients</b></span>
+  <span>Jingcheng Yang, Jun Shang, Qian Song, ..., Leming Shi*.</span>
+  <span><i>BMC Cancer</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Comprehensive analysis of CTLA-4 in the tumor immune microenvironment of 33 cancer types</b></span>
+  <span>Zhang C, Chen J, Song Q, Sun X, Xue M, Yang Z, Shang J*.</span>
+  <span><i>International Immunopharmacology</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Transcription factor RUNX3 promotes CD8 T cell recruitment by CCL3 and CCL20 in lung adenocarcinoma immune microenvironment</b></span>
+  <span>Song Q, Shang J, Zhang C, Chen J, Zhang L, Wu X.</span>
+  <span><i>Journal of Cellular Biochemistry</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Blood molecular markers associated with COVID-19 immunopathology and multi-organ damage</b></span>
+  <span>Chen Y, Zheng Y, Yu Y, Wang Y, Huang Q, Qian F, Sun L, Song Z, Chen Z, Feng J, An Y, Yang J, Su Z, Sun S, Dai F, Chen Q, Lu Q, Li P, Ling Y, Yang Z, Tang H, Shi L, Jin L, Holmes EC, Ding C, Zhu T, Zhang Y.</span>
+  <span><i>The EMBO Journal</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Development and validation of a 10-gene prognostic signature for acute myeloid leukaemia</b></span>
+  <span>Yang Z, Shang J, Li N, Zhang L, Tang T, Tian G, Chen X.</span>
+  <span><i>Journal of Cellular and Molecular Medicine</i></span>
+</div>
+
+<h3 id="2019">2019<a class="headerlink" href="#2019" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Construction of immune‐related risk signature for renal papillary cell carcinoma</b></span>
+    <span>Wang Z, Song Q, Yang Z, Chen J, Shang J*, Ju W*.</span>
+    <span><i>Cancer Medicine</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Genomic and immune profiling of pre-invasive lung adenocarcinoma</b></span>
+    <span>Chen H, Carrot-Zhang J, Zhao Y, Hu H, Freeman SS, Yu S, Ha G, Taylor AM, Berger AC, Westlake L, Zheng Y, ..., Shang J, ..., Shi L, Meyerson M.</span>
+    <span><i>Nature Communications</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Identification of Prognostic Signatures for Predicting the Overall Survival of Uveal Melanoma Patients</b></span>
+    <span>Xue M, Shang J, Chen B, Yang Z, Song Q, Sun X, Chen J, Yang J.</span>
+    <span><i>Journal of Cancer</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Impact of the homogeneous and heterogeneous risk factors on the incidence and survival outcome of bone metastasis in NSCLC patients</b></span>
+    <span>Song Q, Shang J, Zhang C, Zhang L, Wu X.</span>
+    <span><i>Journal of Cancer Research and Clinical Oncology</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Pseudogene CHIAP2 inhibits proliferation and invasion of lung adenocarcinoma cells by means of the WNT pathway</b></span>
+    <span>Shang J, Wang Z, Chen W, Yang Z, Zheng L, Wang S, Li S.</span>
+    <span><i>Journal of Cellular Physiology</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Identification of an immune signature predicting prognosis risk of patients in lung adenocarcinoma</b></span>
+    <span>Song Q, Shang J, Yang Z, Zhang L, Zhang C, Chen J, Wu X.</span>
+    <span><i>Journal of Translational Medicine</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Genomic and Transcriptomic Landscape of Triple-Negative Breast Cancers: Subtypes and Treatment Strategies</b></span>
+    <span>Jiang Y, Ma D, Suo C, Shi J, Xue M, Hu X, Xiao Y, Yu K, Liu Y, Yu Y, Zheng Y, Li X, Zhang C, Hu P, Zhang J, Hua Q, Zhang J, Hou W, Ren L, Bao D, Li B, Yang J, Yao L, Zuo W, Zhao S, Gong Y, Ren Y, Zhao Y, Yang Y, Niu Z, Cao Z, Stover DG, Verschraegen C, Kaklamani V, Daemen A, Benson JR, Takabe K, Bai F, Li DQ, Wang P, Shi L, Huang W, Shao Z.</span>
+    <span><i>Cancer Cell</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>PreMedKB: an integrated precision medicine knowledgebase for interpreting relationships between diseases, genes, variants and drugs</b></span>
+    <span>Yu Y, Wang Y, Xia Z, Zhang X, Jin K, Yang J, Ren L, Zhou Z, Yu D, Qing T, Zhang C, Jin L, Zheng Y, Guo L, Shi L.</span>
+    <span><i>Nucleic Acids Research</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>MicroRNA-302d promotes the proliferation of human pluripotent stem cell-derived cardiomyocytes by inhibiting LATS2 in the Hippo pathway</b></span>
+    <span>Xu F, Yang J, Shang J, Lan F, Li M, Shi L, Shen L, Wang Y, Ge J.</span>
+    <span><i>Clinical Science</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+    <span><b>Commensal microbes affect host humoral immunity to Bordetella pertussis infection</b></span>
+    <span>Zhang Y, Ran Z, Tian M, Zhou Y, Yang J, Yin J, Lu D, Li R, Zhong J.</span>
+    <span><i>Infection and Immunity</i></span>
+</div>
+
+<h3 id="2018">2018<a class="headerlink" href="#2018" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Analysis of PD-1 related immune transcriptional profile in different cancer types</b></span>
+  <span>Shang J, Song Q, Yang Z, Sun X, Xue M, Chen W, Yang J, Wang S.</span>
+  <span><i>Cancer Cell International</i></span>
+</div>
+
+<h3 id="2017">2017<a class="headerlink" href="#2017" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Local application of paeonol prevents early restenosis: a study with a rabbit vein graft model</b></span>
+  <span>Zhang JY, Shang J, Huo TM, Zhang B, Chen G, Zeng ZY, Li SK.</span>
+  <span><i>Journal of Surgical Research</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Identification of lung adenocarcinoma specific dysregulated genes with diagnostic and prognostic value across 27 TCGA cancer types</b></span>
+  <span>Shang J, Song Q, Yang Z, Li D, Chen W, Luo L, Wang Y, Yang J, Li S.</span>
+  <span><i>Oncotarget</i></span>
+</div>
+
+<h3 id="2014">2014<a class="headerlink" href="#2014" title="Permanent link">&para;</a></h3>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>Analysis of lncRNA expression profiles in non-small cell lung cancers (NSCLC) and their clinical subtypes</b></span>
+  <span>Yang J, Lin J, Liu T, Chen T, Pan S, Huang W, Li S*.</span>
+  <span><i>Lung Cancer</i></span>
+</div>
+
+<p><span style="margin-bottom: 10px;" /></p>
+<div style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: left; align-items: left;">
+  <span><b>A meta-analysis of microRNA expression in liver cancer</b></span>
+  <span>Yang J, Han S, Huang W, Chen T, Liu Y, Pan S, Li S*.</span>
+  <span><i>PLoS One</i></span>
+</div>
+
+<h2 id="online-systems-and-databases">Online Systems and Databases<a class="headerlink" href="#online-systems-and-databases" title="Permanent link">&para;</a></h2>
+<h3 id="quartet-data-portal">Quartet Data Portal<a class="headerlink" href="#quartet-data-portal" title="Permanent link">&para;</a></h3>
+<p>An Online Platform for Quality Control and Data Integration of Multi-omics Profiling</p>
+<blockquote>
+<p><img alt="QuartetDataPortal" src="/assets/images/chinese-quartet.png" width="100%" /></p>
+<p>Category: Database; Omics Data Analysis; Quality Control</p>
+<p>Description: The Quartet Project provides publicly accessible multi-omics reference materials and practical tools to enhance the reproducibility and reliability of multi-omics results. Well-characterized multiomics reference materials and quality control metrics pertinent to precision medicine study purposes can be used to measure and mitigate technical variation, enabling more accurate cross-batch and cross-omics data integration in increasingly large-scale and longitudinal studies such as the International Human Phenome Project.</p>
+<p>Website: <a href="https://chinese-quartet.org/#/dashboard">https://chinese-quartet.org/#/dashboard</a></p>
+<p>Group Members: Jingcheng Yang, Yaqing Liu, Jun Shang (View the publication for the full list of authors)</p>
+<p>Publication: <a href="https://doi.org/10.1186/s13059-023-03091-9">https://doi.org/10.1186/s13059-023-03091-9</a></p>
+</blockquote>
+<h3 id="gliomarker">GlioMarker<a class="headerlink" href="#gliomarker" title="Permanent link">&para;</a></h3>
+<p>An Integrated Database for Knowledge Exploration of Diagnostic Biomarkers in Gliomas</p>
+<blockquote>
+<p><img alt="GlioMarker" src="/assets/images/gliomarker.png" width="100%" /></p>
+<p>Category: Database; Knowledge Curation</p>
+<p>Description: GlioMarker is the first diagnostic biomarker database in the field of gliomas to provide biomarker knowledge exploration, including comprehensive literature mining, ontology annotations, precision medical knowledge exploration, and online omics data analysis and visualization. It may serve as a specialist ploatform for clinicians and researchers by providing rapid and comprehensive knowledge, which in turn will facilitate high-quality research and biomarker applications.</p>
+<p>Website: <a href="http://gliomarker.prophetdb.org/#/home">http://gliomarker.prophetdb.org/#/home</a></p>
+<p>Group Members: Zihan Ran, Jingcheng Yang, XiuWen Chen, Zijing Ma</p>
+<p>Publication: <a href="https://doi.org/10.3389/fonc.2022.792055">https://doi.org/10.3389/fonc.2022.792055</a></p>
+</blockquote>
+
+<!-- Source file information -->
+
+<hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2025-09-25
+    
+  </small>
+</div>
+
+              
+
+<!-- Giscus -->
+<!-- <h2 id="__comments">Comments</h2> -->
+<script src="https://giscus.app/client.js" data-repo="open-prophetdb/prophetdb.org" data-repo-id="R_kgDOJ1s3Vw"
+  data-category="Q&A" data-category-id="DIC_kwDOJ1s3V84CXj9H" data-mapping="pathname" data-strict="0"
+  data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme"
+  data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+  </script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+  var giscus = document.querySelector("script[src*=giscus]")
+
+  /* Set palette on initial load */
+  var palette = __md_get("__palette")
+  if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    giscus.setAttribute("data-theme", theme)
+  }
+
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function () {
+    var ref = document.querySelector("[data-md-component=palette]")
+    ref.addEventListener("change", function () {
+      var palette = __md_get("__palette")
+      if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+        /* Instruct Giscus to change theme */
+        var frame = document.querySelector(".giscus-frame")
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          "https://giscus.app"
+        )
+      }
+    })
+  })
+</script>
+<script>
+  // 添加滚动动画效果
+  document.addEventListener('DOMContentLoaded', function () {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      observer.observe(item);
+    });
+
+    // 添加卡片悬停效果
+    document.querySelectorAll('.timeline-card').forEach(card => {
+      card.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+
+      card.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+  });
+</script>
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../tools/ml_collaboration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Best Practices for ML Collaboration" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Best Practices for ML Collaboration
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../team_members/" class="md-footer__link md-footer__link--next" aria-label="Next: Team" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Team
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2016 - 2024 OpenProphetDB
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/open-prophetdb" target="_blank" rel="noopener" title="OpenProphetDB" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest", "search.share"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      
+    
+  </body>
+</html>
